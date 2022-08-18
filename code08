@@ -1,0 +1,25 @@
+include<stdio.h>
+ void main()
+ { int a[100];
+ int fact,n,j,sum,i;
+ printf("enter your range");
+ scanf("%d",&n);
+ for(i=0;i<n;i++)
+ { scanf("%d",&a[i]);
+ }
+ for(i=0;i<n;i++)
+ { sum=0;
+ j=1;
+
+ while(j<=a[i])
+   { 
+
+        if(a[i]%j==0)
+     { sum=sum+j;
+     }
+
+     j++;
+   }
+   printf("%d is a factor of %d\n",sum,a[i]);
+ } 
+ }
